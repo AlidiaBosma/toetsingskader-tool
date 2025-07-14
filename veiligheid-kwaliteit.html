@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.1 Veiligheid en kwaliteit | Toetsingskader Algoritmes</title>
+    <link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<body>
+    <header>
+        <nav class="breadcrumb">
+            <a href="index.html">Toetsingskader</a> &gt;
+            <span>2. Voorkomen van schade</span> &gt;
+            <span>2.1 Veiligheid en kwaliteit</span>
+        </nav>
+        <div class="user-info">
+            <span class="user">Alidia Bosma</span>
+            <span class="timestamp">2025-07-14 15:21:00</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="principle-header">
+            <span class="emoji">🛡️</span>
+            <div>
+                <h1>2.1 Veiligheid en kwaliteit</h1>
+                <p class="principle-description">
+                    Het algoritme is veilig en doet altijd waar het voor gemaakt is.
+                </p>
+            </div>
+        </div>
+
+        <section class="assessment-guide">
+            <h2>Hoe werk je de vragen uit?</h2>
+            <ol>
+                <li>Geef een interpretatie van de vraag in je eigen woorden.</li>
+                <li>Noteer relevante citaten uit rapporten (onderbouwing).</li>
+                <li>Kies een beoordeling: <strong>Voldoet</strong>, <strong>Voldoet deels</strong>, <strong>Voldoet niet</strong>.</li>
+                <li>Leg toe waarom je tot deze beoordeling komt.</li>
+                <li>Vermeld de gebruikte bronnen.</li>
+            </ol>
+        </section>
+
+        <!-- Vraag 2.03 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.03</span>
+                <span class="category">Model & Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Zijn de gemaakte overwegingen van het ontwerp en de implementatie vastgelegd? Is de output reproduceerbaar? Is de sensitiviteit van de output getest op veranderingen in de input en de aannames en zijn de uitkomsten hiervan vergeleken met vooraf opgestelde acceptatiecriteria?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Het is niet meer te herleiden waarom welke keuzes zijn gemaakt in ontwerp en implementatie waardoor transparantie en verantwoording niet mogelijk is.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Vastleggen overwegingen en keuzes in ontwerp (zoals keuzes tussen modellen op basis van bijvoorbeeld ROC-curves, MSE of nauwkeurigheid en binnen het model op basis van bijvoorbeeld een sensitivity analysis) en tijdens implementatie.
+                </div>
+                
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is op welke wijze overwegingen en keuzes in ontwerp en implementatie worden vastgelegd.</li>
+                        <li><em>Mogelijke bronnen: security en privacy framework, werkinstructies.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat de gemaakte keuzes in ontwerp en implementatie zijn gedocumenteerd.</li>
+                        <li><em>Mogelijke bronnen: definitiestudie, functionele ontwerpen, rapportages, versiebeheer (Gitlab of Github).</em></li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.03-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.03-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.03-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.03-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.03-assessment">Beoordeling</label>
+                        <select id="question-2.03-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.03-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.03-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.03-sources">Bronnen</label>
+                        <textarea id="question-2.03-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.06 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.06</span>
+                <span class="category">Model & Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Welke controles zijn toegepast om de aansluiting te maken tussen de invoer en de uitvoer om zo de juistheid en volledigheid van de verwerking te garanderen?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Er vindt na ingebruikname van het algoritme onvoldoende monitoring plaats op de juiste en volledige verwerking, waardoor fouten of ongewenste effecten in de toepassing van het algoritme niet of niet tijdig worden opgemerkt.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Implementatie structurele controles op juiste en volledige verwerking van de gegevens.
+                </div>
+                
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is welke controles worden toegepast om de aansluiting te maken tussen de invoer en de uitvoer om zo de juistheid en volledigheid van de verwerking te garanderen.</li>
+                        <li><em>Mogelijke bronnen: toetsingsplan.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat aansluitingen zijn gemaakt tussen de invoer en de uitvoer om zo de juistheid en volledigheid van de verwerking te garanderen.</li>
+                        <li><em>Mogelijke bronnen: (controle)rapportages, overzicht van uitgevoerde monitoringsactiviteiten, dashboards.</em></li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.06-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.06-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.06-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.06-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.06-assessment">Beoordeling</label>
+                        <select id="question-2.06-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.06-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.06-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.06-sources">Bronnen</label>
+                        <textarea id="question-2.06-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.08 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.08</span>
+                <span class="category">Model & Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Wordt de output van het model gemonitord? Wordt dit op regelmatige basis geëvalueerd?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    De input- en outputdata voldoen qua kwaliteit, volledigheid en betrouwbaarheid niet aan de functionele eisen, waardoor onbedoelde nadelige effecten niet tijdig worden vastgesteld.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Stel documentatie op waarin de eisen aan de input- en outputdata zijn opgenomen en implementeer structurele controles om dit te toetsen. Ga voor alle inputdata na of deze tijdig, volledig en definitief beschikbaar is, een herleidbare afkomst heeft, consistent is gecodeerd en duidelijke metadata bij de variabelen bevat. Kijk daarnaast naar het risico van datavervuiling in het proces.
+                </div>
+                
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is op welke wijze wordt gewaarborgd dat het model effectief blijft en onbedoelde nadelige effecten optreden.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten, toetsingsplan.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat periodiek is vastgesteld dat het model nog effectief is en geen onbedoelde nadelige effecten zijn opgetreden.</li>
+                        <li><em>Mogelijke bronnen: rapportages, overzicht van uitgevoerde monitoringsactiviteiten, dashboards.</em></li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.08-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.08-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.08-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.08-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.08-assessment">Beoordeling</label>
+                        <select id="question-2.08-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.08-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.08-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.08-sources">Bronnen</label>
+                        <textarea id="question-2.08-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Vraag 2.10 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.10</span>
+                <span class="category">Model & Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Als er sprake is van geautomatiseerde besluitvorming, wordt daarbij voldaan aan de wet- en regelgeving die daarvoor geldt?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Gebruik van geautomatiseerde besluitvorming wanneer dat niet is toegestaan of ontbreken van de mogelijkheid van menselijke tussenkomst
+<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Voldoen aan geldende wet- en regelgeving met betrekking tot automatische besluitvorming
+                </div>
+                
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>-Stel vast dat beschreven is aan welke wet- en regelgeving voldaan dient te worden in geval van geautomatiseerde besluitvorming. Stel vast welke normen op grond van wet- en regelgeving gelden voor geautomatiseerde besluitvorming.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat aan de geldende wet- en regelgeving is voldaan in het geval van automatische besluitvorming.</li>
+                        <li><em>Mogelijke bronnen:  compliancy rapportages, audit- of inspectierapporten.</em></li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.10-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.10-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.10-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.10-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.10-assessment">Beoordeling</label>
+                        <select id="question-2.10-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.10-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.10-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.10-sources">Bronnen</label>
+                        <textarea id="question-2.10-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Vraag 2.20 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.20</span>
+                <span class="category">Model & Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    "Is er een expliciete afweging gemaakt met betrekking tot proportionaliteit en subsidiariteit en de toepassing van dataminimalisatie hiervoor?"
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Indien geen expliciete afweging wordt gemaakt met betrekking tot proportionaliteit en subsidiariteit en de toepassing van dataminimalisatie hiervoor, bestaat het risico dat geldende uitgangspunten/regels worden overtreden. 
+<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Sturen op dataminimalisatie, expliciete afweging met betrekking tot proportionaliteit
+                </div>
+                
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is welke uitgangspunten/regels gelden m.b.t. dataminimalisatie en proportionaliteit.</li>
+<li>Stel vast dat beschreven is op welke wijze wordt gewaarborgd dat niet meer gegevens aanwezig zijn dan noodzakelijk voor het uitvoeren van het model.</li>
+<li>Stel vast dat beschreven is op welke wijze wordt gewaarborgd dat eventueel gebruik van gevoelige data subsidiair is aan het doel van het algoritme.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten, DPIA</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat geen andere gegevens zijn ingeladen dan afgesproken en dat de principes van dataminimalisatie en proportionaliteit zijn gehanteerd.
+</li>
+                        <li>Stel vast dat bij gebruik van gevoelige data dit subsidiair is aan het doel van het algoritme.
+</li>
+                        <li><em>Overzicht van ingeladen gegevens, code model.</em></li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.20-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.20-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.20-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.20-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.20-assessment">Beoordeling</label>
+                        <select id="question-2.20-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.20-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.20-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.20-sources">Bronnen</label>
+                        <textarea id="question-2.20-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Vraag 4.09 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">4.09</span>
+                <span class="category">Model & Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+Is er sprake van security by design?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Indien tijdens het ontwerp van de omgeving van het algoritme onvoldoende rekening wordt gehouden met informatiebeveiligingsmaatregelen, bestaat het risico dat de omgeving onvoldoende is beveiligd.
+<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    De gangbare principes rondom ‘security by design’ zijn uitgangspunt voor de ontwikkeling van software en systemen.
+                </div>
+                
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is wat onder security by design wordt verstaan en op welke wijze dit wordt toegepast op het ontwerp van de omgeving van het algoritme.</li>
+<li>Stel vast dat beschreven is op welke wijze wordt gewaarborgd dat niet meer gegevens aanwezig zijn dan noodzakelijk voor het uitvoeren van het model.</li>
+                        <li><em>Mogelijke bronnen: securitybeleid, ontwikkelbeleid.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat de principes van security by design zijn toegepast op het ontwerp van de omgeving van het algoritme.
+</li>
+
+                        <li><em>Interviews met ontwikkelaar, software-architecten.</em></li>
+                    </ul>
+                </div>
+                
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-4.09-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-4.09-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-4.09-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-4.09-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-4.09-assessment">Beoordeling</label>
+                        <select id="question-4.09-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-4.09-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-4.09-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-4.09-sources">Bronnen</label>
+                        <textarea id="question-4.09-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-bar">
+            <button class="export-button">
+                <span class="icon">📥</span>
+                Exporteer alles naar Excel
+            </button>
+            <button class="export-word-button">
+                <span class="icon">📝</span>
+                Exporteer alles naar Word
+            </button>
+        </div>
+    </main>
+    <script src="export.js"></script>
+</body>
+</html>
