@@ -3,8 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menselijke Tussenkomst | Toetsingskader Algoritmes</title>
-    <link rel="stylesheet" href="questions.css">
+    <title>1.1 Menselijke tussenkomst | Toetsingskader Algoritmes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Extra accenten voor opvallende onderzoeksvraag en principes-balk */
+        .principle-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            background: var(--primary-light);
+            border-radius: 9px;
+            padding: 0.7rem 1rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow-md);
+            align-items: center;
+        }
+        .principle-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            color: var(--primary-color);
+            background: white;
+            font-weight: 500;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            font-size: 1rem;
+            transition: background 0.15s;
+        }
+        .principle-nav a.active,
+        .principle-nav a:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        .onderzoeksvraag-highlight {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 12px;
+            font-size: 1.22rem;
+            padding: 1.3rem 1.6rem;
+            margin: 2rem 0 2rem 0;
+            box-shadow: var(--shadow-md);
+            font-weight: 600;
+            border: none;
+        }
+        .onderzoeksvraag-highlight .icon {
+            font-size: 2.2rem;
+            opacity: 0.8;
+        }
+        @media (max-width: 600px) {
+            .principle-nav { flex-wrap: wrap; }
+            .onderzoeksvraag-highlight { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -15,6 +71,30 @@
     <div class="user-info">Ethiek | Model &amp; Data | Privacy</div>
 </header>
 <main>
+
+    <!-- PRINCIPES NAVIGATIEBALK -->
+    <nav class="principle-nav" aria-label="Principes">
+        <a href="menselijke-tussenkomst.html" class="active"><span class="emoji">🤝</span>Menselijke tussenkomst</a>
+        <a href="veiligheid-kwaliteit.html"><span class="emoji">🛡️</span>Veiligheid & kwaliteit</a>
+        <a href="privacy-data.html"><span class="emoji">🔒</span>Privacy & data</a>
+        <a href="geen-discriminatie.html"><span class="emoji">⚖️</span>Geen discriminatie</a>
+        <a href="maatschappelijke-impact.html"><span class="emoji">🌍</span>Maatschappelijke impact</a>
+        <a href="verantwoording.html"><span class="emoji">📋</span>Verantwoording</a>
+        <a href="uitlegbaarheid.html"><span class="emoji">💡</span>Uitlegbaarheid</a>
+    </nav>
+
+    <!-- INLEIDING PRINCIPE -->
+    <section class="principle-header">
+        <span class="emoji">🤝</span>
+        <div>
+            <h2>Menselijke tussenkomst</h2>
+            <p class="principle-description">
+                Dit principe waarborgt dat belangrijke besluiten door algoritmes altijd controleerbaar blijven door mensen, en dat geautomatiseerde beslissingen te corrigeren zijn.
+            </p>
+        </div>
+    </section>
+
+    <!-- VRAGEN EN RISICO'S -->
     <section class="question-card">
         <div class="question-header">
             <span class="question-id">2.10 Model &amp; Data</span>
@@ -27,8 +107,10 @@
             <h3>Beheersmaatregel</h3>
             <p>Voldoen aan geldende wet- en regelgeving met betrekking tot automatische besluitvorming.</p>
             
-            <h3>Onderzoeksvraag</h3>
-            <p>Als er sprake is van geautomatiseerde besluitvorming, wordt daarbij voldaan aan de wet- en regelgeving die daarvoor geldt?</p>
+            <div class="onderzoeksvraag-highlight">
+                <span class="icon">❓</span>
+                <span>Onderzoeksvraag:<br><b>Als er sprake is van geautomatiseerde besluitvorming, wordt daarbij voldaan aan de wet- en regelgeving die daarvoor geldt?</b></span>
+            </div>
             
             <details class="assessment-guide" open>
                 <summary><b>Inspectiestappen (opzet &amp; bestaan)</b></summary>
@@ -76,8 +158,10 @@
             <h3>Beheersmaatregel</h3>
             <p>Geen automatische besluitvorming of geen documentatie (bijvoorbeeld in een Privacy Impact Assessment) waarom het is toegestaan.</p>
             
-            <h3>Onderzoeksvraag</h3>
-            <p>Is er sprake van automatische besluitvorming en zo ja: is dit toegestaan?</p>
+            <div class="onderzoeksvraag-highlight">
+                <span class="icon">❓</span>
+                <span>Onderzoeksvraag:<br><b>Is er sprake van automatische besluitvorming en zo ja: is dit toegestaan?</b></span>
+            </div>
             
             <details class="assessment-guide" open>
                 <summary><b>Inspectiestappen (opzet &amp; bestaan)</b></summary>
