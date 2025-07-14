@@ -170,6 +170,42 @@ main {
     font-size: 1rem;
 }
 
+.onderzoeksvraag-block {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+            padding: 1.1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.13rem;
+            box-shadow: var(--shadow-md);
+            font-weight: 600;
+        }
+.maatregel-block {
+            background: var(--primary-light);
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+            margin: 1.1rem 0 1.3rem 0;
+            color: var(--text-primary);
+        }
+.inspectie-block {
+            margin: 0 0 2rem 0;
+            background: #f8fafc;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 7px;
+            padding: 1rem 1.3rem 0.5rem 1.3rem;
+        }
+        .inspectie-block h4 {
+            color: var(--secondary-color);
+            margin-bottom: 0.2rem;
+            margin-top: 1rem;
+            font-size: 1.04rem;
+        }
+        .inspectie-block ul {
+            margin-top: 0.15rem;
+            margin-bottom: 0.7rem;
+        }
+    </style>
+
 .action-bar {
     position: fixed;
     bottom: 0;
