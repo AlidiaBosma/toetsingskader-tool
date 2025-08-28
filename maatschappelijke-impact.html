@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maatschappelijke impact | Toetsingskader Algoritmes</title>
+    <link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<body>
+    <header>
+        <nav class="breadcrumb">
+            <a href="index.html">Toetsingskader</a> &gt;
+            <span>Maatschappelijke impact</span>
+        </nav>
+        <div class="user-info">
+            <span class="user">Alidia Bosma</span>
+            <span class="timestamp">2025-07-14 14:50:00</span>
+        </div>
+    </header>
+    <main>
+        <div class="principle-header">
+            <span class="emoji">🌍</span>
+            <div>
+                <h1>Maatschappelijke impact</h1>
+                <p class="principle-description">
+                    Dit onderdeel beschrijft hoe algoritmes de maatschappij raken en hoe representativiteit en bias in data en modellen worden gecontroleerd om nadelige gevolgen voor groepen of personen te voorkomen.
+                </p>
+            </div>
+        </div>
+        <section class="assessment-guide">
+            <h2>Hoe werk je de vragen uit?</h2>
+            <ol>
+                <li>Geef een interpretatie van de vraag in je eigen woorden.</li>
+                <li>Noteer relevante citaten uit rapporten (onderbouwing).</li>
+                <li>Kies een beoordeling: <strong>Voldoet</strong>, <strong>Voldoet deels</strong>, <strong>Voldoet niet</strong>.</li>
+                <li>Leg toe waarom je tot deze beoordeling komt.</li>
+                <li>Vermeld de gebruikte bronnen.</li>
+            </ol>
+        </section>
 
+        <!-- Vraag 2.18 (Maatschappelijke impact) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.18</span>
+                <span class="category">Model &amp; Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Is de dataset representatief en wordt bias ten aanzien van verschillende maatschappelijke groepen gesignaleerd en aangepakt?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Er zit onwenselijke systematische afwijking (bias) in de data.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Controleren/testen op bias en eventueel tegenmaatregelen nemen zoals het balanceren van de dataset.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is op welke wijze de representativiteit van de data wordt onderzocht en vastgesteld.</li>
+                        <li>Stel vast dat beschreven is op welke wijze wordt omgegaan met eventuele bias (bijvoorbeeld balanceren door weging van variabelen voor specifieke groepen in de data).</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten, toetsingsplan.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat de data is onderzocht op representativiteit.</li>
+                        <li>Stel vast dat eventuele tegenmaatregelen zijn genomen, zoals het balanceren van de dataset.</li>
+                        <li><em>Mogelijke bronnen: rapportages, geannoteerde code.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.18-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.18-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.18-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.18-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.18-assessment">Beoordeling</label>
+                        <select id="question-2.18-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.18-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.18-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.18-sources">Bronnen</label>
+                        <textarea id="question-2.18-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.19 (Maatschappelijke impact) -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.19</span>
+                <span class="category">Model &amp; Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Leidt het model tot onwenselijke systematische afwijkingen voor bepaalde groepen of personen en worden deze afwijkingen geadresseerd?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Het model creëert onwenselijke systematische afwijking voor specifieke personen, groepen of andere eenheden (bias).<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Maatregelen om bias te beperken, tegen te gaan en/of te compenseren.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is op welke wijze wordt gewaarborgd dat er geen bias wordt gecreëerd door keuzes met betrekking tot het model.</li>
+                        <li>Stel vast dat beschreven is op welke wijze vormen van systematische afwijkingen voor groepen en personen worden onderzocht en afwijkingen, waar nodig, worden geadresseerd in gepaste gremia.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten, toetsingsplan.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat vormen van systematische afwijkingen voor groepen en personen zijn gemonitord, zijn onderzocht en afwijkingen, waar nodig, zijn geadresseerd in gepaste gremia.</li>
+                        <li><em>Mogelijke bronnen: modelcode, GitLab, GitHub, vergaderverslagen.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.19-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.19-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.19-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.19-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.19-assessment">Beoordeling</label>
+                        <select id="question-2.19-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.19-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.19-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.19-sources">Bronnen</label>
+                        <textarea id="question-2.19-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-bar">
+            <button class="export-button">
+                <span class="icon">📥</span>
+                Exporteer alles naar Excel
+            </button>
+            <button class="export-word-button">
+                <span class="icon">📝</span>
+                Exporteer alles naar Word
+            </button>
+        </div>
+    </main>
+    <script src="export.js"></script>
+</body>
+</html>
