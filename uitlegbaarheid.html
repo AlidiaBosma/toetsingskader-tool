@@ -1,1 +1,534 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uitlegbaarheid | Toetsingskader Algoritmes</title>
+    <link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<body>
+    <header>
+        <nav class="breadcrumb">
+            <a href="index.html">Toetsingskader</a> &gt;
+            <span>Uitlegbaarheid</span>
+        </nav>
+        <div class="user-info">
+            <span class="user">Alidia Bosma</span>
+            <span class="timestamp">2025-07-14 14:50:00</span>
+        </div>
+    </header>
+    <main>
+        <div class="principle-header">
+            <span class="emoji">💡</span>
+            <div>
+                <h1>Uitlegbaarheid</h1>
+                <p class="principle-description">
+                    Dit onderdeel richt zich op de uitlegbaarheid van algoritmes: het formuleren van duidelijke doelen, prestatiecriteria, transparantie van code en communicatie met belanghebbenden zodat het algoritme begrijpelijk en controleerbaar blijft.
+                </p>
+            </div>
+        </div>
+        <section class="assessment-guide">
+            <h2>Hoe werk je de vragen uit?</h2>
+            <ol>
+                <li>Geef een interpretatie van de vraag in je eigen woorden.</li>
+                <li>Noteer relevante citaten uit rapporten (onderbouwing).</li>
+                <li>Kies een beoordeling: <strong>Voldoet</strong>, <strong>Voldoet deels</strong>, <strong>Voldoet niet</strong>.</li>
+                <li>Leg toe waarom je tot deze beoordeling komt.</li>
+                <li>Vermeld de gebruikte bronnen.</li>
+            </ol>
+        </section>
 
+        <!-- Vraag 1.01 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">1.01</span>
+                <span class="category">Sturing &amp; Verantwoording</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Is het doel van het algoritme duidelijk omschreven en afgestemd op beleidsdoelen en maatschappelijke resultaten?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Zonder eenduidigheid over het doel is geen sturing op en verantwoording over het algoritme mogelijk en is er een groter risico op fouten en/of verschillen in interpretatie.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Het doel en eventuele subdoelen van het algoritme moeten zo specifiek mogelijk zijn geformuleerd, en waar mogelijk gekwantificeerd, ook in relatie tot beleidsuitkomst (output) en het maatschappelijke resultaat (outcome). Maak de consequenties expliciet en leg deze op het juiste niveau vast.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat het doel van het algoritme formeel is vastgesteld en vastgelegd, ook in relatie tot beleidsuitkomst en het maatschappelijke resultaat.</li>
+                        <li>Stel vast dat het doel van het algoritme is afgeleid van de van toepassing zijnde wet- en regelgeving.</li>
+                        <li><em>Mogelijke bronnen: visie/missie/strategie‑documentatie; beleidsdocumentatie; jaarplannen; notulen van managementoverleg; wet- en regelgeving.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat het doel van het algoritme binnen de organisatie is bekend gesteld.</li>
+                        <li>Stel vast dat het vastgestelde doel van het algoritme consistent is opgenomen in formele documentatie, zoals startarchitectuur en procesbeschrijvingen.</li>
+                        <li><em>Mogelijke bronnen: intranet; mail; interviews met auditees; startarchitectuur; procesbeschrijvingen; werkinstructies.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-1.01-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-1.01-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-1.01-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-1.01-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-1.01-assessment">Beoordeling</label>
+                        <select id="question-1.01-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-1.01-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-1.01-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-1.01-sources">Bronnen</label>
+                        <textarea id="question-1.01-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 1.02 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">1.02</span>
+                <span class="category">Sturing &amp; Verantwoording</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Zijn prestatie- en kwaliteitsdoelstellingen voor het algoritme gedefinieerd en hoe worden deze gemonitord?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Prestatiedoelstellingen en kwaliteitsdoelstellingen zijn niet meetbaar of bespreekbaar als er geen aanpak is.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Een vastgelegde aanpak voor kwaliteits- en prestatiedoelen voor algoritmes.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat prestatie- en kwaliteitsdoelstellingen zijn beschreven en formeel vastgesteld.</li>
+                        <li>Stel vast dat beschreven is op welke wijze de prestatie- en kwaliteitsdoelstellingen periodiek worden getoetst.</li>
+                        <li>Stel vast dat de prestatie- en kwaliteitsdoelstellingen formeel zijn afgesproken met ketenpartijen.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten met KPI’s, businesscase, kwaliteitshandboek, contracten, verwerkingsovereenkomsten, SLA’s.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat de prestatie- en kwaliteitsdoelstellingen periodiek worden getoetst en dat over de realisatie/prestaties wordt gerapporteerd aan het management.</li>
+                        <li>Stel vast dat de ketenpartijen periodiek rapporteren over de realisatie/prestaties van de prestatie- en kwaliteitsdoelstellingen.</li>
+                        <li><em>Mogelijke bronnen: rapportages.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-1.02-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-1.02-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-1.02-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-1.02-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-1.02-assessment">Beoordeling</label>
+                        <select id="question-1.02-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-1.02-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-1.02-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-1.02-sources">Bronnen</label>
+                        <textarea id="question-1.02-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.01 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.01</span>
+                <span class="category">Sturing &amp; Verantwoording</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Is het doel van het algoritme vertaald naar concrete criteria en parameters in de documentatie?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Algoritme functioneert niet in lijn met geformuleerde doelstellingen.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Strategische doelstelling is concreet uitgewerkt in aspecten/criteria/indicatoren.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat het doel van het algoritme, zoals geformuleerd onder Sturing &amp; Verantwoording, is doorvertaald en uitgewerkt in een beschrijving in logische taal/pseudocode of documentatie die handvatten en kaders geeft aan programmeur/ontwikkelaar/onderhouder.</li>
+                        <li>Stel vast dat beschreven is op welke wijze de operationalisering van het doel van het algoritme c.q. parametrisering (business rules, indicatoren, parameters) wordt afgestemd met de ontwikkel‑ en beheerorganisatie.</li>
+                        <li><em>Mogelijke bronnen: DPIA, SLA of instructies waaruit blijkt dat de strategische doelstelling concreet is uitgewerkt in aspecten/criteria/indicatoren.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat parametrisering (business rules, indicatoren, parameters) is afgestemd met de ontwikkel‑ en beheerorganisatie.</li>
+                        <li><em>Mogelijke bronnen: rapportages, instructie code documentatie, interviews met ontwikkelaars en beheerders.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.01-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.01-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.01-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.01-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.01-assessment">Beoordeling</label>
+                        <select id="question-2.01-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.01-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.01-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.01-sources">Bronnen</label>
+                        <textarea id="question-2.01-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.04 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.04</span>
+                <span class="category">Model &amp; Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Hoe is de afweging gemaakt tussen uitlegbaarheid en prestaties van het algoritme?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Als er geen afweging wordt gemaakt tussen de uitlegbaarheid van het model en de prestaties, bestaat het risico dat het vertrouwen van de belanghebbenden wordt geschaad omdat hen niet duidelijk is wat de output van het algoritme inhoudt en aan de hand waarvan deze output gegenereerd is.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Uitleg expliciet en indien van toepassing expliciet maken van afweging tussen uitlegbaarheid en prestaties.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is op welke wijze de afweging wordt gemaakt tussen uitlegbaarheid en prestaties van het algoritme.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat een afweging is gemaakt tussen de uitlegbaarheid en de prestaties van het algoritme.</li>
+                        <li><em>Mogelijke bronnen: risicoanalyses, DPIA, interviews.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.04-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.04-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.04-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.04-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.04-assessment">Beoordeling</label>
+                        <select id="question-2.04-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.04-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.04-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.04-sources">Bronnen</label>
+                        <textarea id="question-2.04-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.07 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.07</span>
+                <span class="category">Model &amp; Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Zijn de gebruikte performance metrics duidelijk gedefinieerd en sluiten ze aan bij het doel van het algoritme?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Het doel van het algoritme, de functionele eisen van het model en de performance metrics sluiten onvoldoende op elkaar aan, waardoor niet kan worden beoordeeld of het voldoende presteert en of de kwaliteit ervan op orde is.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Documenteer alle prestatiecriteria, inclusief de relatie met de doelstellingen en de functionele eisen van het algoritme (AUC, MAE, MSE, accuracy etc.). Bewaar testresultaten waaruit blijkt dat het algoritme aan de criteria voldoet.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is welke performance metrics gelden, hoe deze worden gebruikt en op welke wijze deze overeenkomen met de doelstellingen van het algoritme.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat performance metrics zijn gebruikt en dat deze overeenkomen met de doelstellingen van het algoritme.</li>
+                        <li><em>Mogelijke bronnen: rapportages, overzicht van uitgevoerde monitoringsactiviteiten, dashboards.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.07-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.07-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.07-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.07-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.07-assessment">Beoordeling</label>
+                        <select id="question-2.07-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.07-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.07-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.07-sources">Bronnen</label>
+                        <textarea id="question-2.07-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.09 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.09</span>
+                <span class="category">Sturing &amp; Verantwoording</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Wordt aan belanghebbenden duidelijk gemaakt dat zij met een algoritme te maken hebben en wat de consequenties en beperkingen zijn?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Het is voor belanghebbenden niet duidelijk dat zij met een algoritme te maken hebben, welke consequenties dat heeft of welke beperkingen het algoritme kent.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Richt een procedure in waarmee bij een besluit dat is gebaseerd op een algoritme uit eigen beweging gemaakte keuzes en gebruikte gegevens en aannames aan de belanghebbenden inzichtelijk worden gemaakt of worden gedocumenteerd.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is op welke wijze aan mensen duidelijk wordt gemaakt dat zij met een algoritme te maken hebben, welke consequenties dat heeft of welke beperkingen het algoritme kent.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten, communicatieplan.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat aan mensen duidelijk is gemaakt dat zij met een algoritme te maken hebben, welke consequenties dat heeft en welke beperkingen het algoritme kent.</li>
+                        <li>Stel vast dat het gebruik van het algoritme heeft geleid tot incidenten of schadeclaims.</li>
+                        <li><em>Mogelijke bronnen: correspondentie, brochures, website, gebruikershandleiding, dienstencatalogus, gegevensregister en incidentenrapportages.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.09-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.09-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.09-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.09-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.09-assessment">Beoordeling</label>
+                        <select id="question-2.09-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.09-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.09-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.09-sources">Bronnen</label>
+                        <textarea id="question-2.09-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.11 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.11</span>
+                <span class="category">Model &amp; Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Is het model (code en werking) openbaar gemaakt voor belanghebbenden?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Gebrek aan transparantie van het gebruikte model waardoor niet kan worden gecontroleerd of aan een besluit een zorgvuldig proces vooraf is gegaan en of het voldoet aan andere vereisten.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Model (code) publiceren op een site zoals github.com, inclusief beschrijving van werking, gebruikte data en/of beschrijving daarvan.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast dat beschreven is op welke wijze het model (code en werking) wordt gepubliceerd en beschikbaar gesteld voor belanghebbenden.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat het model (code en werking) is gepubliceerd en beschikbaar is gesteld voor belanghebbenden.</li>
+                        <li><em>Mogelijke bronnen: implementatieplan, site zoals github.com, inclusief beschrijving van werking, gebruikte data en/of beschrijving daarvan.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.11-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.11-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.11-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.11-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.11-assessment">Beoordeling</label>
+                        <select id="question-2.11-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.11-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.11-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.11-sources">Bronnen</label>
+                        <textarea id="question-2.11-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vraag 2.17 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-id">2.17</span>
+                <span class="category">Model &amp; Data</span>
+            </div>
+            <div class="question-content">
+                <div class="onderzoeksvraag-block">
+                    <span style="font-size:1.45em;margin-right:0.6em;">❓</span>
+                    Is gecontroleerd of aan de statistische aannames van het modeltype wordt voldaan en hoe wordt met eventuele schendingen omgegaan?
+                </div>
+                <div class="maatregel-block">
+                    <strong>Risico:</strong><br>
+                    Als verkeerde statistische aannames worden gemaakt, bestaat het risico dat deze leiden tot grote voorspelfouten en interpretatiefouten.<br><br>
+                    <strong>Beheersmaatregel:</strong><br>
+                    Afhankelijk van modeltype kunnen testen uitgevoerd worden. Bijvoorbeeld Granger causality, Rubin causal model, Jarque‑Bera test etc.
+                </div>
+                <div class="inspectie-block">
+                    <h4>Inspectiestappen – Opzet</h4>
+                    <ul>
+                        <li>Stel vast de beschreven is aan welke (statistische) aannames van het modeltype moet worden voldaan en hoe dit wordt gecontroleerd.</li>
+                        <li><em>Mogelijke bronnen: beleidsdocumenten.</em></li>
+                    </ul>
+                    <h4>Inspectiestappen – Bestaan</h4>
+                    <ul>
+                        <li>Stel vast dat aan de (statistische) aannames van het modeltype is voldaan en dat dit expliciet is gecontroleerd.</li>
+                        <li>Stel vast dat eventuele assumptieschendingen zijn onderzocht en robuustheid tegen schendingen onderzocht/zijn beargumenteerd en afgestemd met het management.</li>
+                        <li><em>Mogelijke bronnen: rapportages, code‑annotatie, notities of memo’s.</em></li>
+                    </ul>
+                </div>
+                <div class="analysis-form">
+                    <div class="form-group">
+                        <label for="question-2.17-interpretation">Interpretatie (in eigen woorden)</label>
+                        <textarea id="question-2.17-interpretation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.17-citation">Toelichting (citaten uit relevante rapporten)</label>
+                        <textarea id="question-2.17-citation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.17-assessment">Beoordeling</label>
+                        <select id="question-2.17-assessment">
+                            <option value="">Selecteer...</option>
+                            <option value="Voldoet">Voldoet</option>
+                            <option value="Voldoet deels">Voldoet deels</option>
+                            <option value="Voldoet niet">Voldoet niet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.17-motivation">Toelichting op de beoordeling</label>
+                        <textarea id="question-2.17-motivation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-2.17-sources">Bronnen</label>
+                        <textarea id="question-2.17-sources"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-bar">
+            <button class="export-button">
+                <span class="icon">📥</span>
+                Exporteer alles naar Excel
+            </button>
+            <button class="export-word-button">
+                <span class="icon">📝</span>
+                Exporteer alles naar Word
+            </button>
+        </div>
+    </main>
+    <script src="export.js"></script>
+</body>
+</html>
